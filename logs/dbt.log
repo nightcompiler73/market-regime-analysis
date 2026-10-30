@@ -1,0 +1,137 @@
+[0m10:58:30.395378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7965d45ad6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7965d635ca50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7965d2d3f890>]}
+
+
+============================== 10:58:30.397557 | 18b8837b-290f-449d-b693-0f53f18fa077 ==============================
+[0m10:58:30.397557 [info ] [MainThread]: Running with dbt=1.12.6
+[0m10:58:30.397957 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'maximum_seed_size_mib': '1', 'static_parser': 'True', 'empty': 'None', 'version_check': 'True', 'partial_parse': 'True', 'introspect': 'True', 'warn_error': 'None', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'quiet': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'no_print': 'None', 'invocation_command': 'dbt init market_regime_dbt', 'write_json': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'hints_enabled': 'True', 'profiles_dir': '/home/guitarrock3000/.dbt', 'target_path': 'None'}
+[0m10:58:30.403107 [debug] [MainThread]: Starter project path: /home/guitarrock3000/projects/market-regime-project/.venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m10:58:30.407180 [info ] [MainThread]: Setting up your profile.
+[0m10:58:36.561154 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m10:58:36.561548 [info ] [MainThread]: dbt version: 1.12.6
+[0m10:58:36.561782 [info ] [MainThread]: python version: 3.14.4
+[0m10:58:36.561995 [info ] [MainThread]: python path: /home/guitarrock3000/projects/market-regime-project/.venv/bin/python3
+[0m10:58:36.562185 [info ] [MainThread]: os info: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m10:58:36.598101 [info ] [MainThread]: Using profiles dir at /home/guitarrock3000/.dbt
+[0m10:58:36.598432 [info ] [MainThread]: Using profiles.yml file at /home/guitarrock3000/.dbt/profiles.yml
+[0m10:58:36.598664 [info ] [MainThread]: Using dbt_project.yml file at /home/guitarrock3000/projects/market-regime-project/market_regime_dbt/dbt_project.yml
+[0m10:58:36.599682 [info ] [MainThread]: adapter type: duckdb
+[0m10:58:36.599886 [info ] [MainThread]: adapter version: 1.11.1
+[0m10:58:36.654472 [info ] [MainThread]: Configuration:
+[0m10:58:36.654819 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:58:36.655068 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:58:36.655281 [info ] [MainThread]: Required dependencies:
+[0m10:58:36.655512 [debug] [MainThread]: Executing "git --help"
+[0m10:58:36.656958 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:58:36.657204 [debug] [MainThread]: STDERR: "b''"
+[0m10:58:36.657375 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:58:36.657650 [info ] [MainThread]: Connection:
+[0m10:58:36.657901 [info ] [MainThread]:   database: dev
+[0m10:58:36.658127 [info ] [MainThread]:   schema: main
+[0m10:58:36.658356 [info ] [MainThread]:   path: dev.duckdb
+[0m10:58:36.658543 [info ] [MainThread]:   config_options: None
+[0m10:58:36.658745 [info ] [MainThread]:   extensions: None
+[0m10:58:36.658926 [info ] [MainThread]:   settings: {}
+[0m10:58:36.659104 [info ] [MainThread]:   external_root: .
+[0m10:58:36.659286 [info ] [MainThread]:   use_credential_provider: None
+[0m10:58:36.659468 [info ] [MainThread]:   attach: None
+[0m10:58:36.659648 [info ] [MainThread]:   filesystems: None
+[0m10:58:36.659826 [info ] [MainThread]:   remote: None
+[0m10:58:36.660006 [info ] [MainThread]:   plugins: None
+[0m10:58:36.660185 [info ] [MainThread]:   disable_transactions: False
+[0m10:58:36.660467 [info ] [MainThread]: Registered adapter: duckdb=1.11.1
+[0m10:58:36.701868 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m10:58:36.737803 [debug] [MainThread]: Using duckdb connection "debug"
+[0m10:58:36.738085 [debug] [MainThread]: On debug: select 1 as id
+[0m10:58:36.738306 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:58:36.775066 [debug] [MainThread]: SQL status: OK in 0.037 seconds
+[0m10:58:36.775686 [debug] [MainThread]: On debug: Close
+[0m10:58:36.775963 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:58:36.776188 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:58:36.776426 [info ] [MainThread]: Your new dbt project "market_regime_dbt" was created!
+Initialized new project in /home/guitarrock3000/projects/market-regime-project/market_regime_dbt/market_regime_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:58:36.777382 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 6.4233017, "process_in_blocks": "0", "process_kernel_time": 0.17218, "process_mem_max_rss": "173956", "process_out_blocks": "0", "process_user_time": 0.800839}
+[0m10:58:36.777695 [debug] [MainThread]: Command `dbt init` succeeded at 10:58:36.777634 after 6.42 seconds
+[0m10:58:36.777914 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:58:36.778111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7965d692fbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7965cdec7d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7965cdd15590>]}
+[0m10:58:36.778349 [debug] [MainThread]: Flushing usage events
+[0m10:58:36.898576 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:19:12.188517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7556722bd6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7556740b0910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755670a9f890>]}
+
+
+============================== 12:19:12.191483 | 42b8bfda-67ba-4061-a91a-7278c6b87ebd ==============================
+[0m12:19:12.191483 [info ] [MainThread]: Running with dbt=1.12.6
+[0m12:19:12.191799 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'target_path': 'None', 'log_format': 'default', 'no_print': 'None', 'use_colors': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'hints_enabled': 'True', 'profiles_dir': '/home/guitarrock3000/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'empty': 'False', 'maximum_seed_size_mib': '1', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run --full-refresh', 'use_experimental_parser': 'False', 'printer_width': '80', 'partial_parse': 'True', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m12:19:12.192114 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/guitarrock3000/projects/market-regime-project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:19:12.192962 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.046743706, "process_in_blocks": "0", "process_kernel_time": 0.167143, "process_mem_max_rss": "119800", "process_out_blocks": "0", "process_user_time": 0.700411}
+[0m12:19:12.193227 [debug] [MainThread]: Command `dbt run` failed at 12:19:12.193168 after 0.05 seconds
+[0m12:19:12.193423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755670ce2fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75567093c4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755670ada140>]}
+[0m12:19:12.193667 [debug] [MainThread]: Flushing usage events
+[0m12:19:12.241723 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:21:42.438528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e76f2ec16a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e76f4d5c910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e76f1657890>]}
+
+
+============================== 14:21:42.441605 | ad1accc6-d3a2-4d51-9e81-c8041a6cdc0d ==============================
+[0m14:21:42.441605 [info ] [MainThread]: Running with dbt=1.12.6
+[0m14:21:42.441919 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/guitarrock3000/.dbt', 'maximum_seed_size_mib': '1', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'version_check': 'True', 'quiet': 'False', 'warn_error': 'None', 'empty': 'None', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'no_print': 'None', 'target_path': 'None', 'log_format': 'default', 'log_path': 'logs', 'fail_fast': 'False', 'invocation_command': 'dbt ls', 'printer_width': '80', 'debug': 'False', 'hints_enabled': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False'}
+[0m14:21:42.442219 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/guitarrock3000/projects/market-regime-project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:21:42.443110 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 0.04675759, "process_in_blocks": "0", "process_kernel_time": 0.1929, "process_mem_max_rss": "119360", "process_out_blocks": "0", "process_user_time": 0.655056}
+[0m14:21:42.443385 [debug] [MainThread]: Command `dbt ls` failed at 14:21:42.443325 after 0.05 seconds
+[0m14:21:42.443583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e76f18e1480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e76f16cc830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e76f170c7c0>]}
+[0m14:21:42.443795 [debug] [MainThread]: Flushing usage events
+[0m14:21:42.499223 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:09:42.952185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b784cc56a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b786b60a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b7834a7890>]}
+
+
+============================== 11:09:42.955316 | 3e222d32-7698-466f-98ee-e8f338c3603d ==============================
+[0m11:09:42.955316 [info ] [MainThread]: Running with dbt=1.12.6
+[0m11:09:42.955631 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'no_print': 'None', 'target_path': 'None', 'static_parser': 'True', 'profiles_dir': '/home/guitarrock3000/.dbt', 'version_check': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'warn_error': 'None', 'empty': 'False', 'hints_enabled': 'True', 'debug': 'False', 'maximum_seed_size_mib': '1', 'use_experimental_parser': 'False', 'log_path': 'logs', 'invocation_command': 'dbt run --select fct_market_regime_analysis', 'write_json': 'True', 'fail_fast': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_format': 'default', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:09:42.955907 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/guitarrock3000/projects/market-regime-project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:09:42.956949 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.049796686, "process_in_blocks": "0", "process_kernel_time": 0.270113, "process_mem_max_rss": "120076", "process_out_blocks": "0", "process_user_time": 0.702294}
+[0m11:09:42.957265 [debug] [MainThread]: Command `dbt run` failed at 11:09:42.957194 after 0.05 seconds
+[0m11:09:42.957484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b7836e6fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b7833504d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77b7834e2140>]}
+[0m11:09:42.957720 [debug] [MainThread]: Flushing usage events
+[0m11:09:43.077591 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:12.427696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76539a9bd6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76539c854910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76539919f890>]}
+
+
+============================== 15:08:12.430919 | 3d5aea54-902c-45a9-9cea-f4e34d33ec9a ==============================
+[0m15:08:12.430919 [info ] [MainThread]: Running with dbt=1.12.6
+[0m15:08:12.431285 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_path': 'logs', 'log_format': 'default', 'partial_parse': 'True', 'warn_error': 'None', 'no_print': 'None', 'target_path': 'None', 'use_colors': 'True', 'write_json': 'True', 'profiles_dir': '/home/guitarrock3000/.dbt', 'static_parser': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'hints_enabled': 'True', 'empty': 'False', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'maximum_seed_size_mib': '1', 'invocation_command': 'dbt run', 'printer_width': '80', 'cache_selected_only': 'False', 'quiet': 'False'}
+[0m15:08:12.431594 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/guitarrock3000/projects/market-regime-project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:08:12.432414 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.045001738, "process_in_blocks": "0", "process_kernel_time": 0.117052, "process_mem_max_rss": "119660", "process_out_blocks": "0", "process_user_time": 0.726532}
+[0m15:08:12.432685 [debug] [MainThread]: Command `dbt run` failed at 15:08:12.432625 after 0.05 seconds
+[0m15:08:12.432871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7653993defd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7653990484d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7653991da140>]}
+[0m15:08:12.433066 [debug] [MainThread]: Flushing usage events
+[0m15:08:12.478445 [debug] [MainThread]: An error was encountered while trying to flush usage events
